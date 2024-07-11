@@ -4,12 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { PercentagePipe } from './percentage.pipe';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PercentagePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
